@@ -4,10 +4,15 @@ for (let i = 0; i < words.length; i++) {
   let word = words[i];
   let wordLC = word.toLowerCase();
 
-  if (word === wordLC) {
+  if (word.length > 4 && word === wordLC) {
+    console.log("long and lowercase");
+  } else if (word === wordLC) {
     console.log("lowercase");
+  } else if (word.length > 4) {
+    console.log("long");
+  } else {
+    console.log(word)
   }
-
 }
 
 // print "lowercase" if the string is all lowercase
