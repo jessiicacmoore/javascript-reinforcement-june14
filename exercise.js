@@ -3,12 +3,13 @@ let words = ["Totam", "ut", "odit","quis", "Maiores", "unde", "EX", "EST", "corp
 for (let i = 0; i < words.length; i++) {
   let word = words[i];
   let wordLC = word.toLowerCase();
+  let wordIsLong = word > 4
 
-  if (word.length > 4 && word === wordLC) {
+  if (wordIsLong && word === wordLC) {
     console.log("long and lowercase");
   } else if (word === wordLC) {
     console.log("lowercase");
-  } else if (word.length > 4) {
+  } else if (wordIsLong > 4) {
     console.log("long");
   } else {
     console.log(word)
