@@ -1,6 +1,6 @@
 # JavaScript Reinforcement: June 14
 ## Prerequisites
-*programming fundamentals
+* programming fundamentals
 ## Exercise
 Copy the following array into a JS file:
 ```
